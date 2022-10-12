@@ -61,13 +61,13 @@
   <style>
     
       .kratos-cover.kratos-cover-2 {
-        background-image: url('/images/banner.webp');
+        background-image: url('/images/banner.png');
       }
     
     
       @media(min-width:768px) {
         body.custom-background {
-          background-image: url('/images/bg.webp');
+          background-image: url('/images/nae.jpg');
         }
       }
     
@@ -166,11 +166,11 @@
 
 <script type="text/javascript">
 {
-    const flist = JSON.parse(`[{"name":"猫猫①号","bio":"喵~","avatar":"../images/avatar.webp","link":"#"},{"name":"猫猫②号","bio":"喵喵~","avatar":"../images/avatar.webp","link":"#"},{"name":"猫猫⑨号","bio":"咪啪~","avatar":"../images/avatar.webp","link":"#"}]`);
+    const flist = JSON.parse(`[{"name":"猫猫①号","bio":"喵~","avatar":"../images/kq.jpg","link":"#"},{"name":"猫猫②号","bio":"喵喵~","avatar":"../images/kq.jpg","link":"#"},{"name":"猫猫⑨号","bio":"咪啪~","avatar":"../images/kq.jpg","link":"#"}]`);
     let friendNodes = '';
     while (flist.length > 0) {
         const rndNum = Math.floor(Math.random()*flist.length);
-        friendNodes += `<li><a target="_blank" href="${flist[rndNum].link}"><img src="${flist[rndNum].avatar || '<%- url_cdn("images/avatar.webp") %>'}"><h4>${flist[rndNum].name}</h4><p>${flist[rndNum].bio || ''}</p></a></li>`;
+        friendNodes += `<li><a target="_blank" href="${flist[rndNum].link}"><img src="${flist[rndNum].avatar || '<%- url_cdn("images/kq.jpg") %>'}"><h4>${flist[rndNum].name}</h4><p>${flist[rndNum].bio || ''}</p></a></li>`;
         flist.splice(rndNum, 1);
     }
     document.getElementById("friendsList").innerHTML = friendNodes;
@@ -207,7 +207,7 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/avatar.webp" />
+            <img class="about-photo" src="/images/kq.jpg" />
         </div>
     </div>
     <div class="textwidget">
